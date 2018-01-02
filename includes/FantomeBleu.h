@@ -14,7 +14,7 @@ class FantomeBleu : public Fantome {
         FantomeBleu();
         Coordonnee deplacement(Coordonnee coordonnee);
         int collision(Item *item); //Valeur de retour à voir (void ou int)
-        int wFile(); //écrit dans un fichier
+        //int wFile(); //écrit dans un fichier
         int dessin(); //dessine sur la fenetre
 
 };

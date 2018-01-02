@@ -4,12 +4,14 @@
 
 #include "../includes/Gomme.h"
 
-Gomme::Gomme() {}
+Gomme::Gomme() {
+    m_id = 2;
+}
 
 int Gomme::Bonus() {
     return 0;
 }
 
-int Gomme::wFile() {}
+//int Gomme::wFile() {}
 
 int Gomme::dessin() {}

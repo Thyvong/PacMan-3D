@@ -9,3 +9,7 @@
 }*/
 Personnage::Personnage() {
 }
+
+int Personnage::getVitesse() {
+    return m_vitesse;
+}

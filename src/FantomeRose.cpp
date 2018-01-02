@@ -6,8 +6,9 @@
 #include "../includes/Coordonnee.h"
 #include "../includes/FantomeRose.h"
 
-FantomeRose::FantomeRose() {
-
+FantomeRose::FantomeRose(){
+    m_id = 7;
+    setCoordonnee(14,30,1);
 }
 
 Coordonnee FantomeRose::deplacement(Coordonnee coordonnee) {
@@ -22,7 +23,7 @@ int FantomeRose::dessin() {
     return 0;
 }
 
-int FantomeRose::wFile() {
+/*int FantomeRose::wFile() {
     return 0;
-}
+}*/
 

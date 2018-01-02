@@ -12,7 +12,7 @@ class Gomme : public Nourriture{
     public:
         Gomme();
         int Bonus();
-        int wFile(); //écrit dans un fichier
+        //int wFile(); //écrit dans un fichier
         int dessin(); //dessine sur la fenetre
 };
 

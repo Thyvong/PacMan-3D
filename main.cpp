@@ -1,3 +1,32 @@
+/*
+#define GLEW_STATIC
+#include <iostream>
+#include <fstream>
+#include <GL/glew.h>
+#include <GL/glut.h>
+#include <memory>
+#include <SDL/SDL.h>
+#include "glimac/include/glimac/Sphere.hpp"
+#include "glimac/include/glimac/Program.hpp"
+#include "glimac/include/glimac/Image.hpp"
+#include "glimac/include/glimac/SDLWindowManager.hpp"
+
+#ifdef WIN32
+void initGLextensions() {
+//	glGetString= (PFNGLACTIVETEXTUREARBPROC) wglGetProcAddress("glActiveTextureARB");
+}
+#include <windows.h>
+#else
+#include <unistd.h>
+#endif
+
+#define ERROR_EXIT(message) std::cerr << message << std::endl; exit(1);
+
+
+using namespace glm;
+using namespace glimac;
+*/
+
 #include <iostream>
 #include "includes/Coordonnee.h"
 #include "includes/PacMan.h"
@@ -33,5 +62,6 @@ int main() {
     std::cout<<frg->getCoordonnee().getX()<<std::endl;
 
     Interface interface = Interface();
+    interface.wFile();
     return 0;
 }

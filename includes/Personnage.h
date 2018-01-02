@@ -10,8 +10,8 @@
 
 class Personnage : public Item{
     protected:
-    int vitesse;
-    Personnage();
+        int m_vitesse;
+        Personnage();
 
     public:
         int getVitesse();

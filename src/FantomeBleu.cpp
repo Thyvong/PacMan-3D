@@ -6,7 +6,8 @@
 
 
 FantomeBleu::FantomeBleu() {
-
+    m_id = 5;
+    setCoordonnee(12,30,1);
 }
 
 Coordonnee FantomeBleu::deplacement(Coordonnee coordonnee) {
@@ -17,9 +18,9 @@ int FantomeBleu::collision(Item *item) {
     return 0;
 }
 
-int FantomeBleu::wFile() {
+/*int FantomeBleu::wFile() {
     return 0;
-}
+}*/
 
 int FantomeBleu::dessin() {
     return 0;

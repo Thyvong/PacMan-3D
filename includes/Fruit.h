@@ -12,7 +12,7 @@ class Fruit : public Nourriture{
     public:
         Fruit();
         int Bonus();
-        int wFile(); //écrit dans un fichier
+        //int wFile(); //écrit dans un fichier
         int dessin(); //dessine sur la fenetre
 };
 #endif //IMACMAN_FRUIT_H

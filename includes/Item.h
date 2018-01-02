@@ -12,11 +12,12 @@ class Item{
         int m_id;
         Coordonnee m_coordonnee;
         Item();
+        void setCoordonnee( int x, int y, int z);
 
     public:
-        int getId();
-        Coordonnee getCoordonnee();
-        virtual int wFile() = 0; //écrit dans un fichier
+        int & getId();
+        Coordonnee & getCoordonnee();
+        int wFile(); //écrit dans un fichier
         virtual int dessin() = 0; //dessine sur la fenetre
 };
 

@@ -37,5 +37,8 @@ class Terrain{
         std::vector<Nourriture *> & getNourriture();
         std::vector<Coordonnee> & getMur();
 
+        //Renvoie un nombre aléatoire entre a et b
+        int alea(int a, int b);
+
 };
 #endif //IMACMAN_TERRAIN_H

@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Mathieu/CLionProjects/ImacMan/main.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/main.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Coordonnee.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Fantome.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeBleu.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeJaune.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeRose.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeRouge.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Fruit.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Gomme.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Interface.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Interface.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Item.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Item.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Nourriture.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/PacMan.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Personnage.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/SuperGomme.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj"
-  "C:/Users/Mathieu/CLionProjects/ImacMan/src/Terrain.cpp" "C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/main.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/main.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Coordonnee.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Fantome.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeBleu.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeJaune.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeRose.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeRouge.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Fruit.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Gomme.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Interface.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Interface.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Item.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Item.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Nourriture.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/PacMan.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Personnage.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/SuperGomme.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/IMACMAN/src/Terrain.cpp" "C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

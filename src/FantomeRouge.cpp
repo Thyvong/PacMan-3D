@@ -4,8 +4,9 @@
 
 #include "../includes/FantomeRouge.h"
 
-FantomeRouge::FantomeRouge() {
-
+FantomeRouge::FantomeRouge(){
+    m_id = 8;
+    setCoordonnee(11,30,1);
 }
 
 Coordonnee FantomeRouge::deplacement(Coordonnee coordonnee) {
@@ -20,7 +21,7 @@ int FantomeRouge::dessin() {
     return 0;
 }
 
-int FantomeRouge::wFile() {
+/*int FantomeRouge::wFile() {
     return 0;
-}
+}*/
 

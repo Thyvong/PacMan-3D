@@ -7,7 +7,8 @@
 #include "../includes/FantomeJaune.h"
 
 FantomeJaune::FantomeJaune() {
-
+    m_id = 6;
+    setCoordonnee(13,30,1);
 }
 
 Coordonnee FantomeJaune::deplacement(Coordonnee coordonnee) {
@@ -18,9 +19,9 @@ int FantomeJaune::collision(Item *item) {
     return 0;
 }
 
-int FantomeJaune::wFile() {
+/*int FantomeJaune::wFile() {
     return 0;
-}
+}*/
 
 int FantomeJaune::dessin() {
     return 0;

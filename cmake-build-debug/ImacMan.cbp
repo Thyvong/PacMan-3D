@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ImacMan">
-				<Option output="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/ImacMan.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug"/>
+				<Option output="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/ImacMan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImacMan"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImacMan"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ImacMan/fast">
-				<Option output="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/ImacMan.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug"/>
+				<Option output="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/ImacMan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,127 +55,127 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImacMan/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImacMan/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/ImacMan/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/IMACMAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Coordonnee.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Coordonnee.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Fantome.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Fantome.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/FantomeBleu.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/FantomeBleu.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/FantomeJaune.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/FantomeJaune.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/FantomeRose.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/FantomeRose.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/FantomeRouge.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/FantomeRouge.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Fruit.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Fruit.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Gomme.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Gomme.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Interface.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Interface.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Item.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Item.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Nourriture.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Nourriture.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/PacMan.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/PacMan.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Personnage.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Personnage.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/SuperGomme.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/SuperGomme.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/includes/Terrain.h">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/includes/Terrain.h">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/main.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/main.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Coordonnee.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Coordonnee.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Fantome.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Fantome.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeBleu.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeBleu.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeJaune.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeJaune.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeRose.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeRose.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/FantomeRouge.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/FantomeRouge.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Fruit.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Fruit.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Gomme.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Gomme.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Interface.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Interface.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Item.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Item.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Nourriture.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Nourriture.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/PacMan.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/PacMan.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Personnage.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Personnage.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/SuperGomme.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/SuperGomme.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/src/Terrain.cpp">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/src/Terrain.cpp">
 			<Option target="ImacMan"/>
 		</Unit>
-		<Unit filename="C:/Users/Mathieu/CLionProjects/ImacMan/CMakeLists.txt">
+		<Unit filename="C:/Users/Mathieu/CLionProjects/IMACMAN/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

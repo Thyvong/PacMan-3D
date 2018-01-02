@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mathieu\CLionProjects\ImacMan
+CMAKE_SOURCE_DIR = C:\Users\Mathieu\CLionProjects\IMACMAN
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ImacMan.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/ImacMan.dir/flags.make
 
 CMakeFiles/ImacMan.dir/main.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImacMan.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\main.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ImacMan.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\main.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\main.cpp
 
 CMakeFiles/ImacMan.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\main.cpp > CMakeFiles\ImacMan.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\main.cpp > CMakeFiles\ImacMan.dir\main.cpp.i
 
 CMakeFiles/ImacMan.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\main.cpp -o CMakeFiles\ImacMan.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\main.cpp -o CMakeFiles\ImacMan.dir\main.cpp.s
 
 CMakeFiles/ImacMan.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/ImacMan.dir/main.cpp.obj.provides.build: CMakeFiles/ImacMan.dir/main.
 
 CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj: ../src/Coordonnee.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Coordonnee.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Coordonnee.cpp
 
 CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Coordonnee.cpp > CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Coordonnee.cpp > CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Coordonnee.cpp -o CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Coordonnee.cpp -o CMakeFiles\ImacMan.dir\src\Coordonnee.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/ImacMan.dir/src/Coordonnee.cpp.obj.provides.build: CMakeFiles/ImacMan
 
 CMakeFiles/ImacMan.dir/src/Item.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Item.cpp.obj: ../src/Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImacMan.dir/src/Item.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Item.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImacMan.dir/src/Item.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Item.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Item.cpp
 
 CMakeFiles/ImacMan.dir/src/Item.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Item.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Item.cpp > CMakeFiles\ImacMan.dir\src\Item.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Item.cpp > CMakeFiles\ImacMan.dir\src\Item.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Item.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Item.cpp -o CMakeFiles\ImacMan.dir\src\Item.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Item.cpp -o CMakeFiles\ImacMan.dir\src\Item.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Item.cpp.obj.requires:
 
@@ -130,16 +130,16 @@ CMakeFiles/ImacMan.dir/src/Item.cpp.obj.provides.build: CMakeFiles/ImacMan.dir/s
 
 CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj: ../src/Personnage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Personnage.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Personnage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Personnage.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Personnage.cpp
 
 CMakeFiles/ImacMan.dir/src/Personnage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Personnage.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Personnage.cpp > CMakeFiles\ImacMan.dir\src\Personnage.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Personnage.cpp > CMakeFiles\ImacMan.dir\src\Personnage.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Personnage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Personnage.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Personnage.cpp -o CMakeFiles\ImacMan.dir\src\Personnage.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Personnage.cpp -o CMakeFiles\ImacMan.dir\src\Personnage.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj.requires:
 
@@ -154,16 +154,16 @@ CMakeFiles/ImacMan.dir/src/Personnage.cpp.obj.provides.build: CMakeFiles/ImacMan
 
 CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj: ../src/Nourriture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Nourriture.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Nourriture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Nourriture.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Nourriture.cpp
 
 CMakeFiles/ImacMan.dir/src/Nourriture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Nourriture.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Nourriture.cpp > CMakeFiles\ImacMan.dir\src\Nourriture.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Nourriture.cpp > CMakeFiles\ImacMan.dir\src\Nourriture.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Nourriture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Nourriture.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Nourriture.cpp -o CMakeFiles\ImacMan.dir\src\Nourriture.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Nourriture.cpp -o CMakeFiles\ImacMan.dir\src\Nourriture.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj.requires:
 
@@ -178,16 +178,16 @@ CMakeFiles/ImacMan.dir/src/Nourriture.cpp.obj.provides.build: CMakeFiles/ImacMan
 
 CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj: ../src/PacMan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\PacMan.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\PacMan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\PacMan.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\PacMan.cpp
 
 CMakeFiles/ImacMan.dir/src/PacMan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/PacMan.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\PacMan.cpp > CMakeFiles\ImacMan.dir\src\PacMan.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\PacMan.cpp > CMakeFiles\ImacMan.dir\src\PacMan.cpp.i
 
 CMakeFiles/ImacMan.dir/src/PacMan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/PacMan.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\PacMan.cpp -o CMakeFiles\ImacMan.dir\src\PacMan.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\PacMan.cpp -o CMakeFiles\ImacMan.dir\src\PacMan.cpp.s
 
 CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj.requires:
 
@@ -202,16 +202,16 @@ CMakeFiles/ImacMan.dir/src/PacMan.cpp.obj.provides.build: CMakeFiles/ImacMan.dir
 
 CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj: ../src/Gomme.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Gomme.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Gomme.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Gomme.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Gomme.cpp
 
 CMakeFiles/ImacMan.dir/src/Gomme.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Gomme.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Gomme.cpp > CMakeFiles\ImacMan.dir\src\Gomme.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Gomme.cpp > CMakeFiles\ImacMan.dir\src\Gomme.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Gomme.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Gomme.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Gomme.cpp -o CMakeFiles\ImacMan.dir\src\Gomme.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Gomme.cpp -o CMakeFiles\ImacMan.dir\src\Gomme.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj.requires:
 
@@ -226,16 +226,16 @@ CMakeFiles/ImacMan.dir/src/Gomme.cpp.obj.provides.build: CMakeFiles/ImacMan.dir/
 
 CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj: ../src/SuperGomme.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\SuperGomme.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\SuperGomme.cpp
 
 CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\SuperGomme.cpp > CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\SuperGomme.cpp > CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.i
 
 CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\SuperGomme.cpp -o CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\SuperGomme.cpp -o CMakeFiles\ImacMan.dir\src\SuperGomme.cpp.s
 
 CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj.requires:
 
@@ -250,16 +250,16 @@ CMakeFiles/ImacMan.dir/src/SuperGomme.cpp.obj.provides.build: CMakeFiles/ImacMan
 
 CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj: ../src/Fruit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Fruit.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Fruit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Fruit.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fruit.cpp
 
 CMakeFiles/ImacMan.dir/src/Fruit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Fruit.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Fruit.cpp > CMakeFiles\ImacMan.dir\src\Fruit.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fruit.cpp > CMakeFiles\ImacMan.dir\src\Fruit.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Fruit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Fruit.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Fruit.cpp -o CMakeFiles\ImacMan.dir\src\Fruit.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fruit.cpp -o CMakeFiles\ImacMan.dir\src\Fruit.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj.requires:
 
@@ -274,16 +274,16 @@ CMakeFiles/ImacMan.dir/src/Fruit.cpp.obj.provides.build: CMakeFiles/ImacMan.dir/
 
 CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj: ../src/FantomeRouge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRouge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRouge.cpp
 
 CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRouge.cpp > CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRouge.cpp > CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.i
 
 CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRouge.cpp -o CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRouge.cpp -o CMakeFiles\ImacMan.dir\src\FantomeRouge.cpp.s
 
 CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj.requires:
 
@@ -298,16 +298,16 @@ CMakeFiles/ImacMan.dir/src/FantomeRouge.cpp.obj.provides.build: CMakeFiles/ImacM
 
 CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj: ../src/FantomeBleu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeBleu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeBleu.cpp
 
 CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeBleu.cpp > CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeBleu.cpp > CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.i
 
 CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeBleu.cpp -o CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeBleu.cpp -o CMakeFiles\ImacMan.dir\src\FantomeBleu.cpp.s
 
 CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj.requires:
 
@@ -322,16 +322,16 @@ CMakeFiles/ImacMan.dir/src/FantomeBleu.cpp.obj.provides.build: CMakeFiles/ImacMa
 
 CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj: ../src/FantomeJaune.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeJaune.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeJaune.cpp
 
 CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeJaune.cpp > CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeJaune.cpp > CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.i
 
 CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeJaune.cpp -o CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeJaune.cpp -o CMakeFiles\ImacMan.dir\src\FantomeJaune.cpp.s
 
 CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj.requires:
 
@@ -346,16 +346,16 @@ CMakeFiles/ImacMan.dir/src/FantomeJaune.cpp.obj.provides.build: CMakeFiles/ImacM
 
 CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj: ../src/FantomeRose.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRose.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRose.cpp
 
 CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRose.cpp > CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRose.cpp > CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.i
 
 CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\FantomeRose.cpp -o CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\FantomeRose.cpp -o CMakeFiles\ImacMan.dir\src\FantomeRose.cpp.s
 
 CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj.requires:
 
@@ -370,16 +370,16 @@ CMakeFiles/ImacMan.dir/src/FantomeRose.cpp.obj.provides.build: CMakeFiles/ImacMa
 
 CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj: ../src/Fantome.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Fantome.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Fantome.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Fantome.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fantome.cpp
 
 CMakeFiles/ImacMan.dir/src/Fantome.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Fantome.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Fantome.cpp > CMakeFiles\ImacMan.dir\src\Fantome.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fantome.cpp > CMakeFiles\ImacMan.dir\src\Fantome.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Fantome.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Fantome.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Fantome.cpp -o CMakeFiles\ImacMan.dir\src\Fantome.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Fantome.cpp -o CMakeFiles\ImacMan.dir\src\Fantome.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj.requires:
 
@@ -394,16 +394,16 @@ CMakeFiles/ImacMan.dir/src/Fantome.cpp.obj.provides.build: CMakeFiles/ImacMan.di
 
 CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj: ../src/Terrain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Terrain.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Terrain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Terrain.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Terrain.cpp
 
 CMakeFiles/ImacMan.dir/src/Terrain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Terrain.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Terrain.cpp > CMakeFiles\ImacMan.dir\src\Terrain.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Terrain.cpp > CMakeFiles\ImacMan.dir\src\Terrain.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Terrain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Terrain.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Terrain.cpp -o CMakeFiles\ImacMan.dir\src\Terrain.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Terrain.cpp -o CMakeFiles\ImacMan.dir\src\Terrain.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj.requires:
 
@@ -418,16 +418,16 @@ CMakeFiles/ImacMan.dir/src/Terrain.cpp.obj.provides.build: CMakeFiles/ImacMan.di
 
 CMakeFiles/ImacMan.dir/src/Interface.cpp.obj: CMakeFiles/ImacMan.dir/flags.make
 CMakeFiles/ImacMan.dir/src/Interface.cpp.obj: ../src/Interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ImacMan.dir/src/Interface.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Interface.cpp.obj -c C:\Users\Mathieu\CLionProjects\ImacMan\src\Interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ImacMan.dir/src/Interface.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ImacMan.dir\src\Interface.cpp.obj -c C:\Users\Mathieu\CLionProjects\IMACMAN\src\Interface.cpp
 
 CMakeFiles/ImacMan.dir/src/Interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ImacMan.dir/src/Interface.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\ImacMan\src\Interface.cpp > CMakeFiles\ImacMan.dir\src\Interface.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\IMACMAN\src\Interface.cpp > CMakeFiles\ImacMan.dir\src\Interface.cpp.i
 
 CMakeFiles/ImacMan.dir/src/Interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ImacMan.dir/src/Interface.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\ImacMan\src\Interface.cpp -o CMakeFiles\ImacMan.dir\src\Interface.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\IMACMAN\src\Interface.cpp -o CMakeFiles\ImacMan.dir\src\Interface.cpp.s
 
 CMakeFiles/ImacMan.dir/src/Interface.cpp.obj.requires:
 
@@ -482,7 +482,7 @@ ImacMan.exe: CMakeFiles/ImacMan.dir/build.make
 ImacMan.exe: CMakeFiles/ImacMan.dir/linklibs.rsp
 ImacMan.exe: CMakeFiles/ImacMan.dir/objects1.rsp
 ImacMan.exe: CMakeFiles/ImacMan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ImacMan.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable ImacMan.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ImacMan.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -514,6 +514,6 @@ CMakeFiles/ImacMan.dir/clean:
 .PHONY : CMakeFiles/ImacMan.dir/clean
 
 CMakeFiles/ImacMan.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mathieu\CLionProjects\ImacMan C:\Users\Mathieu\CLionProjects\ImacMan C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug C:\Users\Mathieu\CLionProjects\ImacMan\cmake-build-debug\CMakeFiles\ImacMan.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Mathieu\CLionProjects\IMACMAN C:\Users\Mathieu\CLionProjects\IMACMAN C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug C:\Users\Mathieu\CLionProjects\IMACMAN\cmake-build-debug\CMakeFiles\ImacMan.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ImacMan.dir/depend
 

@@ -22,6 +22,8 @@ public:
     Coordonnee rotation();
     Coordonnee scale();
 
+    bool operator==(Coordonnee coordonnee);
+
 };
 
 #endif //IMACMAN_COORDONNEES_H

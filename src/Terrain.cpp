@@ -2,9 +2,15 @@
 // Created by Mathieu on 30/12/2017.
 //
 
+#include <cstdlib>
 #include "../includes/Terrain.h"
 
 Terrain::Terrain() {
+    m_pacMan = PacMan();
+    m_frg = FantomeRouge();
+    m_frs = FantomeRose();
+    m_fj = FantomeJaune();
+    m_frg = FantomeRouge();
 
 }
 

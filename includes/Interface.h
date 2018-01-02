@@ -7,11 +7,13 @@
 
 class Interface{
     private:
-        int vies;
-        int score;
+        int m_vies;
+        int m_score;
 
     public:
         Interface();
+        int getVies();
+        int getScore();
         int wFile();//ecriture sur fichier
         int rFile();//lecture sur fichier
         int pause();

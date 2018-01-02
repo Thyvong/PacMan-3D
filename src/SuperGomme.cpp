@@ -8,7 +8,7 @@
 #include "../includes/SuperGomme.h"
 
 SuperGomme::SuperGomme() {
-
+    m_id = 3;
 }
 
 int SuperGomme::Bonus() {

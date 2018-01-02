@@ -28,6 +28,14 @@ Coordonnee::Coordonnee() {
     m_z = 0;
 }
 
+bool Coordonnee::operator==(Coordonnee coordonnee) {
+
+    if(m_x == coordonnee.getX() && m_y == coordonnee.getY() && m_z == coordonnee.getZ())
+        return true;
+
+    return false;
+}
+
 /***************************************************************A faire********************************************************************************/
 /*Coordonnee Coordonnee::translation() {
     return Coordonnee(0,0,0);
