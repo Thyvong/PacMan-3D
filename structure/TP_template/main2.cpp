@@ -39,22 +39,30 @@ int main(int argc, char** argv) {
     GLint MVPMat_loc=glGetUniformLocation(program.getGLId(),"uMVPMatrix");
     GLint MVMat_loc=glGetUniformLocation(program.getGLId(),"uMVMatrix");
     GLint NormalMat_loc=glGetUniformLocation(program.getGLId(),"uNormalMatrix");
-    std::cout<<"YES"<<std::endl;
-    Camera camera(10,0,0);
-    Terrain jeu;
+
+    Camera camera(20,50,0);// angle en degré
+    std::string level="level1.txt";
+    Terrain jeu(level);
     glm::mat4 view;
 
-    PacMan& pacman=jeu.getPacman();
+    PacMan* pacman=jeu.getPacman();
     
 
-    Mur& monMur=jeu.getMur();
-    std::vector<glm::vec3> maze=jeu.getMaze();
+    std::vector<Mur*> maze=jeu.getMaze();
+    std::vector<Nourriture*> bouffe=jeu.getNourriture();
     
-    std::cout<<"YES"<<std::endl;
-    
+    // std::cout<<"comparaison glm"<<std::endl<<glm::all(glm::equal(glm::vec3(1,1,0),glm::vec3(1,1,1)))<<std::endl;
+    // std::vector<std::vector<int>> test(10,std::vector<int>(20));
+    // std::cout<<"taille d'un 2-dim :  "<<test.size()<<std::endl;
+    // std::cout<<"taille d'un 2-dim :  "<<test[0].size()<<std::endl;
     // Application loop:
     bool done = false;
     bool down=false;
+    std::cout<<"PLOP"<<std::endl;
+
+    std::cout<<"test access pacman"<<std::endl;
+    std::cout<<"coord: "<<pacman->getCoordonnee()<<std::endl;
+    std::cout<<"tes fini"<<std::endl;
 
     while(!done) {
         // Event loop:
@@ -74,8 +82,24 @@ int main(int argc, char** argv) {
 
                         }break;
 
+                        case SDLK_z:{//direction z négatif
+                            pacman->deplacement(2);
+                            //pacman.deplacement();
+                        }break;
+
                         case SDLK_DOWN:{
 
+                        }break;
+
+                        case SDLK_q:{
+                            pacman->deplacement(1);
+                        }break;
+
+                        case SDLK_s:{
+                            pacman->deplacement(0);
+                        }break;
+                        case SDLK_d:{
+                            pacman->deplacement(3);
                         }break;
                     }
                 }break;
@@ -104,47 +128,60 @@ int main(int argc, char** argv) {
         /*********************************
          * HERE SHOULD COME THE RENDERING CODE
          *********************************/
-        pacman.update();
-        view=camera.gettrackviewmat(pacman);
 
+
+        pacman->update();
+        view=camera.gettrackviewmat(*pacman);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        glBindVertexArray(pacman.getApparence()->vao);
-        
-        
+
+
+        glBindVertexArray(pacman->getApparence()->vao);
         //ca marche aussi
-        glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*pacman.getMod()));
-        glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*pacman.getMod()))));
-        glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(pacman.getProjection()*view*pacman.getMod()));
-
-
-        if(pacman.getApparence()->type==Boule){
-            glDrawArrays(GL_TRIANGLES, 0, pacman.getApparence()->nbpoint);
+        glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*pacman->getMod()));
+        glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*pacman->getMod()))));
+        glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(pacman->getProjection()*view*pacman->getMod()));
+        if(pacman->getApparence()->type==Boule){
+            glDrawArrays(GL_TRIANGLES, 0, pacman->getApparence()->nbpoint);
         }
-        
-
         glBindVertexArray(0);
+
+
 
         //DESSIN DE MAZE
-
         for (int i = 0; i < maze.size(); ++i)
         {
-        glBindVertexArray(monMur.getApparence()->vao);
-        monMur.setCoordonnee(maze[i]);
-        
-        //TEST
-        glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*monMur.getMod()));
-        glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*monMur.getMod()))));
-        glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(monMur.getProjection()*view*monMur.getMod()));
-        
-        if (monMur.getApparence()->type==Boite){
-
-            glDrawElements(GL_TRIANGLES,monMur.getApparence()->nbpoint,GL_UNSIGNED_INT,0);
-        }
-
-
+            glBindVertexArray(maze[i]->getApparence()->vao);
+            //TEST
+            glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*maze[i]->getMod()));
+            glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*maze[i]->getMod()))));
+            glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(maze[i]->getProjection()*view*maze[i]->getMod()));
+            if (maze[i]->getApparence()->type==Boite){
+    
+                glDrawElements(GL_TRIANGLES,maze[i]->getApparence()->nbpoint,GL_UNSIGNED_INT,0);
+            }
+            glBindVertexArray(0);
         }//endfor
-        glBindVertexArray(0);
+        
+
+
+        //DESSIN DE BOUFFE
+        for (int i = 0; i < bouffe.size(); ++i)
+        {
+            glBindVertexArray(bouffe[i]->getApparence()->vao);
+            //TEST
+            glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*bouffe[i]->getMod()));
+            glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*bouffe[i]->getMod()))));
+            glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(bouffe[i]->getProjection()*view*bouffe[i]->getMod()));
+            if (bouffe[i]->getApparence()->type==PetiteBoule){
+    
+                glDrawArrays(GL_TRIANGLES,0,bouffe[i]->getApparence()->nbpoint);
+            }
+            glBindVertexArray(0);
+        }//endfor
+        
+
+
         // Update the display
         windowManager.swapBuffers();
     }
@@ -152,3 +189,27 @@ int main(int argc, char** argv) {
 
     return EXIT_SUCCESS;
 }
+
+/*
+main
+    initialize window
+    do
+        do
+            displaymenu(exit=0)
+        while(choice)
+        switch(choice)
+            level1
+            level2
+            level3
+    while(exit)
+
+level()
+    initialize shader/matrice
+    initialize Terrain, load files
+    confirmation dialogue
+    countdown
+    while(done)
+        display
+        input
+        apply
+*/

@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL -I"/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/include" -I"/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/third-party/include" 
+CXX_INCLUDES = -I/usr/include/SDL -I"/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/include" -I"/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/third-party/include" 
 

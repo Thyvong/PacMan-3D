@@ -14,7 +14,7 @@
 
 class Item;
 using namespace glimac;
-enum Form{Boule,Boite};
+enum Form{Boule,Boite,Empty,PetiteBoule};
 
 class Vertex{
 public:

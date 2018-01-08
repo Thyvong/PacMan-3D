@@ -23,9 +23,9 @@ int PacMan::dessin() {
     return 0 ;
 }
 
-void PacMan::deplacement(glm::vec3 coordonnee) {
-    setCoordonnee(m_coordonnee+coordonnee);
-}
+// void PacMan::deplacement(glm::vec3 coordonnee) {
+//     setCoordonnee(m_coordonnee+coordonnee);
+// }
 
 int PacMan::collision(Item * item) {
     return 0;

@@ -21,7 +21,7 @@ class PacMan : public Personnage{
         int bonus(Nourriture * nourriture);//valeur retour a voir
         //int wFile(); //écrit dans un fichier
         int dessin(); //dessine sur la fenetre
-        void deplacement(glm::vec3 coordonnee);
+        //void deplacement(glm::vec3 coordonnee);
         int collision(Item * item); //Valeur de retour à voir (void ou int)
 
         int croisement(Gomme * gomme);

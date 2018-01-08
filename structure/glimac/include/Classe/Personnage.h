@@ -5,10 +5,14 @@
 
 #include "Item.h"
 #include "Mur.hpp"
+//#include "Terrain.h"
+
 #include <glimac/glm.hpp>
 
 #ifndef IMACMAN_PERSONNAGE_H
 #define IMACMAN_PERSONNAGE_H
+
+class Terrain;
 
 class Personnage : public Item{
     protected:
@@ -18,11 +22,12 @@ class Personnage : public Item{
         	type=Character;
         	m_vitesse=0.1f;
         }
-
+        bool wallcollide(int orient,glm::vec3 move);
     public:
         float getVitesse();
+        void changedirection(int orient);
 
-        virtual void deplacement(glm::vec3 coordonnee);
+        void deplacement(int orient);
         virtual int collision(Item *item); //Valeur de retour à voir (void ou int)
 
 };

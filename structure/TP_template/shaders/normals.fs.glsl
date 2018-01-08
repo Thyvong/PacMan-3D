@@ -7,6 +7,8 @@ in vec2 vTexCoords; // not used yet
 
 out vec3 fFragColor;
 
+
+
 void main() {
     fFragColor =normalize(vNormal_vs);
 }

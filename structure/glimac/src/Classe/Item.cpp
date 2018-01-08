@@ -13,6 +13,8 @@ Item::Item(Modele* modele,glm::vec3 pos){
     Projection=glm::perspective(glm::radians(70.f),800.0f/600.0f,0.1f,100.f);
     setCoordonnee(pos);
     apparence=modele;
+    largeur=2;
+    hauteur=2;
 
 }
 
@@ -30,6 +32,9 @@ void Item::update(){
 }
 Modele* Item::getApparence(){
     return apparence;
+}
+Type Item::getType(){
+    return type;
 }
 glm::vec3 Item::getCoordonnee() {
     return m_coordonnee;
@@ -62,4 +67,3 @@ void Item::setCoordonnee(glm::vec3 coord) {
     calculModeleMatrix();
 
 }
-

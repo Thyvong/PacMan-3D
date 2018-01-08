@@ -729,10 +729,14 @@ glimac/CMakeFiles/glimac.dir/src/Classe/PacMan.cpp.o: ../third-party/include/glm
 glimac/CMakeFiles/glimac.dir/src/Classe/PacMan.cpp.o: ../third-party/include/glm/vector_relational.hpp
 glimac/CMakeFiles/glimac.dir/src/Classe/PacMan.cpp.o: ../glimac/src/Classe/PacMan.cpp
 
+glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Fantome.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Item.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Mur.hpp
+glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Nourriture.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/OGL3.hpp
+glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/PacMan.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Personnage.h
+glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/Classe/Terrain.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/glimac/FilePath.hpp
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/glimac/Program.hpp
 glimac/CMakeFiles/glimac.dir/src/Classe/Personnage.cpp.o: ../glimac/include/glimac/SDLWindowManager.hpp

@@ -79,6 +79,10 @@ glimac/glm.hpp
 ../glimac/include/Classe/Terrain.h
 vector
 -
+fstream
+-
+string
+-
 PacMan.h
 ../glimac/include/Classe/PacMan.h
 Fantome.h
@@ -87,6 +91,8 @@ Nourriture.h
 ../glimac/include/Classe/Nourriture.h
 Mur.hpp
 ../glimac/include/Classe/Mur.hpp
+Item.h
+../glimac/include/Classe/Item.h
 
 ../glimac/include/glimac/BBox.hpp
 glm.hpp
@@ -914,15 +920,15 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../third-party/include/glm/detail/func_vector_relational.hpp
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Coordonnee.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Coordonnee.cpp
 Classe/Coordonnee.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Fantome.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Fantome.cpp
 Classe/Fantome.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Interface.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Interface.cpp
 Classe/Interface.h
 -
 Classe/PacMan.h
@@ -932,7 +938,7 @@ fstream
 iostream
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Item.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Item.cpp
 fstream
 -
 iostream
@@ -940,21 +946,21 @@ iostream
 Classe/Item.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Mur.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Mur.cpp
 Classe/Item.h
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Classe/Item.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Classe/Item.h
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Nourriture.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Nourriture.cpp
 Classe/Nourriture.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/OGL3.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/OGL3.cpp
 Classe/OGL3.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Classe/OGL3.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Classe/OGL3.hpp
 Classe/Item.h
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Classe/Item.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Classe/Item.h
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/PacMan.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/PacMan.cpp
 iostream
 -
 Classe/Nourriture.h
@@ -962,17 +968,21 @@ Classe/Nourriture.h
 Classe/PacMan.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Personnage.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Personnage.cpp
 Classe/Personnage.h
 -
+Classe/Item.h
+-
+Classe/Terrain.h
+-
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/Classe/Terrain.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/Classe/Terrain.cpp
 cstdlib
 -
 Classe/Terrain.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Cone.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Cone.cpp
 cmath
 -
 vector
@@ -980,43 +990,43 @@ vector
 iostream
 -
 glimac/common.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/common.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/common.hpp
 glimac/Cone.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Cone.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Cone.hpp
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Geometry.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Geometry.cpp
 glimac/Geometry.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Geometry.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Geometry.hpp
 tiny_obj_loader.h
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/tiny_obj_loader.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/tiny_obj_loader.h
 iostream
 -
 algorithm
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Image.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Image.cpp
 glimac/Image.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Image.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Image.hpp
 stb_image.h
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/stb_image.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/stb_image.h
 iostream
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Program.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Program.cpp
 glimac/Program.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Program.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Program.hpp
 stdexcept
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/SDLWindowManager.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/SDLWindowManager.cpp
 glimac/SDLWindowManager.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/SDLWindowManager.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/SDLWindowManager.hpp
 iostream
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Shader.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Shader.cpp
 glimac/Shader.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Shader.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Shader.hpp
 fstream
 -
 stdexcept
@@ -1026,7 +1036,7 @@ string
 sstream
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/Sphere.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/Sphere.cpp
 cmath
 -
 vector
@@ -1034,11 +1044,11 @@ vector
 iostream
 -
 glimac/common.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/common.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/common.hpp
 glimac/Sphere.hpp
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/glimac/Sphere.hpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/glimac/Sphere.hpp
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/stb_image.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/stb_image.h
 stdio.h
 -
 math.h
@@ -1060,7 +1070,7 @@ stddef.h
 stdint.h
 -
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/tiny_obj_loader.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/tiny_obj_loader.cpp
 cstdlib
 -
 cstring
@@ -1078,9 +1088,9 @@ fstream
 sstream
 -
 tiny_obj_loader.h
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/tiny_obj_loader.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/tiny_obj_loader.h
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET/glimac/src/glimac/tiny_obj_loader.h
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac/src/glimac/tiny_obj_loader.h
 string
 -
 vector

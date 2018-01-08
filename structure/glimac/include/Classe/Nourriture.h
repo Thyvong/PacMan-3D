@@ -16,6 +16,7 @@ class Nourriture : public Item{
         	type=Consummable;
         	active=true;
         }
+
         bool active;
 
 
@@ -29,6 +30,7 @@ class Gomme : public Nourriture{
         Gomme(Modele* modele,glm::vec3 pos):Nourriture(modele,pos){
         	type=GUM;
         }
+
         int Bonus(){
         	active=false;
         	return 100;
@@ -47,6 +49,7 @@ class SuperGomme : public Nourriture {
         	active=false;
         	return 1000;
         }
+        int dessin();
 };
 class Fruit : public Nourriture{
 

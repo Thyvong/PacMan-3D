@@ -1,4 +1,4 @@
-# Install script for directory: /home/ken/Documents/C++/IMACMAN COMMUN/PROJET/TP_template
+# Install script for directory: /home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/TP_template
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -45,6 +45,35 @@ void Modele::initialize(){
 			
 
 		}break;
+		case PetiteBoule:{//no use of ibo grâce à sphere
+			Sphere sphere(0.5f,16,8);
+			nbpoint=sphere.getVertexCount();
+
+			glBindBuffer(GL_ARRAY_BUFFER,vbo);
+			glBufferData(GL_ARRAY_BUFFER, nbpoint* sizeof(ShapeVertex), sphere.getDataPointer(), GL_STATIC_DRAW);
+			glBindBuffer(GL_ARRAY_BUFFER,0);
+
+			glBindVertexArray(vao);
+    		glEnableVertexAttribArray(0);
+    		glEnableVertexAttribArray(1);
+    		glEnableVertexAttribArray(2);
+    		glBindBuffer(GL_ARRAY_BUFFER, vbo);
+		
+    		glVertexAttribPointer(0, 
+       			3, GL_FLOAT, GL_FALSE, 
+    		    sizeof(ShapeVertex),(const GLvoid*)offsetof(ShapeVertex,position));
+    		glVertexAttribPointer(1, 
+    		    3, GL_FLOAT, GL_FALSE, 
+    		    sizeof(ShapeVertex),(const GLvoid*)offsetof(ShapeVertex,normal));
+    		glVertexAttribPointer(2, 
+    		    2, GL_FLOAT, GL_FALSE, 
+    		    sizeof(ShapeVertex),(const GLvoid*)offsetof(ShapeVertex,texCoords));
+		
+    		glBindBuffer(GL_ARRAY_BUFFER, 0);
+    		glBindVertexArray(0);
+			
+
+		}break;
 
 		//texture à revoir et normal à init
 		case Boite:{
@@ -120,6 +149,10 @@ void Modele::initialize(){
     		glBindVertexArray(0);
 			
 		}break;
+		case Empty:{
+			nbpoint=0;
+
+		}
 		default :{
 
 		}break;
