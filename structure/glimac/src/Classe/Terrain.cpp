@@ -6,26 +6,26 @@
 #include <Classe/Terrain.h>
 
 std::vector<std::vector<Item*>> Terrain::m_tilemap;
-
+int Terrain::supermodecpt=0;
 void tilemapPosition(glm::vec3 pos,int m_rows,int m_cols,int& indice1,int& indice2){
     int i=0,j=0;
-    std::cout<<"POsition à tester:"<<std::endl
-    <<"vous: "<<pos<<std::endl
-    <<"m_rows: "<<m_rows<<std::endl
-    <<"m_cols: "<<m_cols<<std::endl;
+    // std::cout<<"POsition à tester:"<<std::endl
+    // <<"vous: "<<pos<<std::endl
+    // <<"m_rows: "<<m_rows<<std::endl
+    // <<"m_cols: "<<m_cols<<std::endl;
     while(i < m_rows)
     {
         if (i*2.0f<=pos.z && pos.z<2.0f*i+2)
         {
             indice1=i;
-            std::cout<<pos.z<<" est compris entre:"<<std::endl
-            <<i*2.0f<<" et "<<2.0f*i+1<<std::endl;
-            std::cout<<"Found coordinates i"<<std::endl;
+            // std::cout<<pos.z<<" est compris entre:"<<std::endl
+            // <<i*2.0f<<" et "<<2.0f*i+1<<std::endl;
+            // std::cout<<"Found coordinates i"<<std::endl;
             while(j<m_cols){
                 if (j*2.0f<=pos.x && pos.x<2.0f*j+2)
                 {
                     indice2=j;
-                    std::cout<<"Found coordinates j"<<std::endl;
+                    //std::cout<<"Found coordinates j"<<std::endl;
                 }
                 j++;
             }
@@ -41,7 +41,6 @@ void Terrain::load(std::string nom){
     Gomme* addr_gomme;
     SuperGomme* addr_sgomme;
     Fruit* addr_fruit;
-
     flux.open(nom.c_str(),std::ios::in);
 
     if (!flux)
@@ -51,14 +50,14 @@ void Terrain::load(std::string nom){
     }
     std::cout<<"Ouverture de: "<<nom<<std::endl;
     flux >> n >> m;
+
     m_rows=n;
     m_cols=m;
-    std::cout<<"dim de Tilemap d'après les attributs: "<<std::endl
-    <<"n: "<<n<<std::endl
-    <<"m: "<<m<<std::endl;
     std::vector<Item*> filler(m,nullptr);
 
-        for (i = 0; i < n; i++)
+
+
+    for (i = 0; i < n; i++)
         {
             m_tilemap.push_back(filler);
             for (j = 0; j < m; j++)
@@ -116,11 +115,12 @@ void Terrain::load(std::string nom){
             }
             std::cout<<std::endl;
         }
-
+        std::cout << "n = \n" << std::endl;
         flux.close();
     std::cout<<"PLOP"<<std::endl;
 
 }
+
 Terrain::Terrain(std::string nom) {
     rouge=new Modele(Boule);
     rouge->initialize();
@@ -142,7 +142,6 @@ Terrain::Terrain(std::string nom) {
     fruit->initialize();
     vide=new Modele(Empty);
 
-    
 
     load(nom);
     
@@ -187,7 +186,7 @@ FantomeRose * Terrain::getFrs() {
     return m_frs;
 }
 
-FantomeRouge *Terrain::getfrg() {
+FantomeRouge *Terrain::getFrg() {
     return m_frg;
 }
 
@@ -200,3 +199,164 @@ std::vector<Mur*> Terrain::getMaze() {
     return m_maze;
 }
 
+void Terrain::collision(PacMan* perso,Nourriture* food){
+    if(glm::length(
+        perso->getCoordonnee()-food->getCoordonnee()) 
+        <
+        perso->largeur/2+food->largeur/2)
+    {
+        // la collision a lieu, on demande l'application immédiate des effets
+
+        // on l'utilisera surtout pour pacman: item1 pour pacman, item2 pour le reste
+        // std::cout<<"Collision détectée:"<<std::endl
+        // <<"type: "<<item1->getType()<<"-"<<item2->getType()<<std::endl
+        // <<"coordonnees: "<<item1->getCoordonnee()<<" - "<<item2->getCoordonnee()<<std::endl;
+
+        //probleme de casting
+        perso->collide(food);
+        food->collide();
+        
+    }
+}
+void Terrain::collision(PacMan* perso1,Fantome* perso2){
+    if(glm::length(
+        perso1->getCoordonnee()-perso2->getCoordonnee()) 
+        <
+        perso1->largeur/2+perso2->largeur/2)
+    {
+        // la collision a lieu, on demande l'application immédiate des effets
+
+        // on l'utilisera surtout pour pacman: item1 pour pacman, item2 pour le reste
+        // std::cout<<"Collision détectée:"<<std::endl
+        // <<"type: "<<item1->getType()<<"-"<<item2->getType()<<std::endl
+        // <<"coordonnees: "<<item1->getCoordonnee()<<" - "<<item2->getCoordonnee()<<std::endl;
+
+        //probleme de casting
+
+        perso1->collide(perso2);
+        perso2->collide(perso1);
+        
+    }
+}
+void Terrain::LookAfterPacman(){ // à lancer à chaque tour après les déplacement
+    int i,j;
+    Etat previous,after;
+    tilemapPosition(m_pacMan->getCoordonnee(),m_rows,m_cols,i,j);
+    // pour la nourriture, uniquement si sur la meme case pour éviter de manger à distance
+
+    previous=m_pacMan->getetat();
+    if(m_tilemap[i][j]->getType()!=IMACMAN){
+        //no choice, switch pour caster
+        switch(m_tilemap[i][j]->getType()){
+            case GUM:{
+                collision(m_pacMan,((Gomme*)m_tilemap[i][j]));
+            }break;
+            case SGUM:{
+
+                collision(m_pacMan,((SuperGomme*)m_tilemap[i][j]));
+            }break;
+            case FRUIT:{
+                collision(m_pacMan,((Fruit*)m_tilemap[i][j]));
+            }break;
+        }
+        
+
+        
+    }
+    // pour les fantomes
+    collision(m_pacMan,m_frg);
+    collision(m_pacMan,m_frs);
+    collision(m_pacMan,m_fb);
+    collision(m_pacMan,m_fj);
+
+    // application des effets selon les états 
+    switch(previous){
+
+        case Normal:{
+            switch(m_pacMan->getetat()){
+                case Death:{
+                    // reset
+                    std::cout<<"DEAD GUY DETECTED"<<std::endl;
+                    afterPacDeath();
+                }break;
+                case Super:{
+                    std::cout<<"Je start le super"<<std::endl;
+                    startSuper();
+
+                }break;
+            }
+        }break;
+    }
+    Supercountdown();
+
+}
+int Terrain::dessin(glm::mat4 view){
+    int i;
+    m_pacMan->dessin(view);
+    m_fj->dessin(view);
+    m_fb->dessin(view);
+    m_frs->dessin(view);
+    m_frg->dessin(view);
+    for (i = 0; i < m_maze.size(); i++)
+    {
+        m_maze[i]->dessin(view);
+    }
+    for (i = 0; i < m_nourriture.size(); i++)
+    {
+        m_nourriture[i]->dessin(view);
+    }
+    
+    
+}
+void Terrain::startSuper(){
+    supermodecpt=10000;
+}
+bool Terrain::isSuper(){
+    if (supermodecpt>0 && m_pacMan->getetat()==Super)
+    {
+        return true;
+    }
+    return false;
+}
+void Terrain::Supercountdown(){
+    if(isSuper()){
+
+        supermodecpt--;
+        //std::cout<<"COuntdown: "<<supermodecpt<<std::endl;
+        if(!isSuper()){
+            m_pacMan->setetat(Normal);
+        }
+    }
+}
+void Terrain::afterPacDeath(){
+    m_pacMan->gobacktostart();
+    m_pacMan->setetat(Normal);
+    m_pacMan->decreaselife();
+    supermodecpt=0;
+
+    m_frg->gobacktostart();
+    m_frg->setetat(Normal);
+
+    m_frs->gobacktostart();
+    m_frs->setetat(Normal);
+
+    m_fb->gobacktostart();
+    m_fb->setetat(Normal);
+
+    m_fj->gobacktostart();
+    m_fj->setetat(Normal);
+}
+int Terrain::gameover(){
+    if(m_pacMan->life==0){
+        return 1;
+    }else{
+        for (int i = 0; i < m_nourriture.size(); i++)
+        {
+            if (m_nourriture[i]->isActive())
+            {
+                return 0;
+            }
+        }
+        return 1;
+    }
+}

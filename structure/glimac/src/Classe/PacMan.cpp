@@ -8,53 +8,51 @@
 
 
 int PacMan::mange(Nourriture * nourriture) {
+
+    if(nourriture->isActive()){
+        if(nourriture->getType()==SGUM)
+        {
+            std::cout<<"JE PASSE EN SUPER MODE"<<std::endl;
+            setetat(Super);
+        }
+        return nourriture->Bonus();
+    }
     return 0;
 }
 
-int PacMan::bonus(Nourriture * nourriture) {
-    return 0;
-}
 
 /*int PacMan::wFile() {
     return 0;
 }*/
 
-int PacMan::dessin() {
-    return 0 ;
+
+void PacMan::decreaselife(){
+    life--;
+}
+void PacMan::increaselife(){
+    life++;
 }
 
-// void PacMan::deplacement(glm::vec3 coordonnee) {
-//     setCoordonnee(m_coordonnee+coordonnee);
-// }
 
-int PacMan::collision(Item * item) {
-    return 0;
+int PacMan::collide(Nourriture* nourriture){
+
+    return mange(nourriture);
 }
+int PacMan::collide(Fantome* ghost){
 
-int PacMan::croisement(Gomme * gomme) {
-    if (getCoordonnee() == gomme->getCoordonnee())
-        return 10;
-    return 0;
+    if(ghost->getetat()!=Death){
+        if (etat==Super)
+        {
+            std::cout<<"JAI MANGÉ LE FANTOME"<<std::endl;
+            return 1000;
+        }else{
+            setetat(Death);
+            std::cout<<"IM DEAD"<<std::endl;
+            return -1000;
+        }
+    }
+    
 }
-
-int PacMan::croisement(SuperGomme * supergomme) {
-    if (getCoordonnee() == supergomme->getCoordonnee())
-        return 1;
-    return 0;
-}
-
-int PacMan::croisement(Fantome * fantome) {
-    if (getCoordonnee() == fantome->getCoordonnee())
-        return 1;
-    return 0;
-}
-
-int PacMan::croisement(Fruit * fruit) {
-    if (getCoordonnee() == fruit->getCoordonnee())
-        return 500;
-    return 0;
-}
-
 
 
 

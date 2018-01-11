@@ -5,12 +5,12 @@
 
 #include <Classe/Nourriture.h>
 
-int Gomme::dessin(){
-	return 0;
+
+bool Nourriture::isActive(){
+	return active;
 }
-int SuperGomme::dessin(){
-	return 0;
-}
-int Fruit::dessin(){
-	return 0;
+int Nourriture::dessin(glm::mat4 view){
+	if(isActive()){
+		Item::dessin(view);
+	}
 }

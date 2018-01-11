@@ -7,7 +7,9 @@ glimac/CMakeFiles/glimac.dir/src/Classe/Coordonnee.cpp.o: ../glimac/src/Classe/C
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/Fantome.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/Item.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/Mur.hpp
+glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/Nourriture.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/OGL3.hpp
+glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/PacMan.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/Classe/Personnage.h
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/glimac/FilePath.hpp
 glimac/CMakeFiles/glimac.dir/src/Classe/Fantome.cpp.o: ../glimac/include/glimac/Program.hpp

@@ -39,7 +39,7 @@ Type Item::getType(){
 glm::vec3 Item::getCoordonnee() {
     return m_coordonnee;
 }
-void setCoordonnee(glm::vec3 coord);
+
 
 glm::mat4 Item::getProjection(){
     return Projection;
@@ -58,8 +58,25 @@ int Item::wFile() {
     else  // sinon
         std::cerr << " Erreur à l'ouverture ! " << std::endl;*/
 }
-int Item::dessin(){
-    return 0;
+int Item::dessin(glm::mat4 view){
+    GLint mv,mvp,norm;
+    mv=Modele::getMVloc();
+    mvp=Modele::getMVPloc();
+    norm=Modele::getNormalloc();
+
+    glBindVertexArray(apparence->vao);
+    //ca marche aussi
+    glUniformMatrix4fv(mv,1,GL_FALSE,glm::value_ptr(view*Mod));
+    glUniformMatrix4fv(norm,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*Mod))));
+    glUniformMatrix4fv(mvp,1,GL_FALSE,glm::value_ptr(Projection*view*Mod));
+    if(apparence->type==Boule||apparence->type==PetiteBoule){
+        glDrawArrays(GL_TRIANGLES, 0, apparence->nbpoint);
+
+    }else{
+        glDrawElements(GL_TRIANGLES,apparence->nbpoint,GL_UNSIGNED_INT,0);
+
+    }
+    glBindVertexArray(0);
 }
 void Item::setCoordonnee(glm::vec3 coord) {
 

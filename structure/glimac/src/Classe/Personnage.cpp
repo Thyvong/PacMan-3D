@@ -12,6 +12,9 @@
 float Personnage::getVitesse() {
     return m_vitesse;
 }
+void Personnage::gobacktostart(){
+	setCoordonnee(origin);
+}
 
 void Personnage::deplacement(int orient) {
 	glm::vec3 move;
@@ -82,13 +85,13 @@ bool Personnage::wallcollide(int orient,glm::vec3 theoricalmovement){
 
     bool depasse=false;
 
-    std::cout<<"dim de Tilemap: "<<std::endl
-    <<"n: "<<Terrain::m_tilemap.size()<<std::endl
-    <<"m: "<<Terrain::m_tilemap[0].size()<<std::endl;
+    // std::cout<<"dim de Tilemap: "<<std::endl
+    // <<"n: "<<Terrain::m_tilemap.size()<<std::endl
+    // <<"m: "<<Terrain::m_tilemap[0].size()<<std::endl;
 
 	tilemapPosition(m_coordonnee,Terrain::m_tilemap.size(),Terrain::m_tilemap[0].size(),currentid1,currentid2);
 	tilemapPosition(m_coordonnee+theoricalmovement,Terrain::m_tilemap.size(),Terrain::m_tilemap[0].size(),theoryid1,theoryid2);
-	std::cout<<"Tilemap trouvé"<<std::endl;
+	//std::cout<<"Tilemap trouvé"<<std::endl;
 	switch(orient){
 		case 0:{
 			if(currentid1+1==Terrain::m_tilemap.size()){ // cas "tuyau Mario Sud"
@@ -201,13 +204,17 @@ bool Personnage::wallcollide(int orient,glm::vec3 theoricalmovement){
 	// move is legit
 	return true;
 }
-int Personnage::collision(Item* item){
-	return 0;
-}
+
 void Personnage::changedirection(int orient){
 	if(orient >= 0 && orient < 4){
 		orientation=orient;
 		return;
 	}
 	orientation=0;
+}
+Etat Personnage::getetat(){
+	return etat;
+}
+void Personnage::setetat(Etat state){
+	etat=state;
 }

@@ -35,6 +35,15 @@ public:
 		glDeleteBuffers(1,&ibo);
     	glDeleteVertexArrays(1,&vao);
 	}
+	static GLint m_mvloc,m_mvploc,m_normalloc;
+	static GLint getMVloc();
+	static GLint getMVPloc();
+	static GLint getNormalloc();
+	static void setMVloc(GLint val);
+	static void setMVPloc(GLint val);
+	static void setNormalloc(GLint val);
+	static void init_uniformloc(Program* program);
+	
 
 
 	//vbo/vao et factory shit

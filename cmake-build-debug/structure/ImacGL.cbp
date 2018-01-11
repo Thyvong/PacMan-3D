@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ImacGL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\structure\;CMake Files\structure\glimac\;CMake Files\structure\TP_template\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glimac">
+				<Option output="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/libglimac.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include/SDL"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/third-party/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 glimac"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glimac/fast">
+				<Option output="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/libglimac.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include/SDL"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/third-party/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 glimac/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/glimac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP_template_main2">
+				<Option output="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/TP_template_main2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include/SDL"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/third-party/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 TP_template_main2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP_template_main2/fast">
+				<Option output="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/TP_template_main2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include/SDL"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include"/>
+					<Add directory="C:/Users/Mathieu/CLionProjects/PacMan/structure/third-party/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 TP_template_main2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Mathieu/CLionProjects/PacMan/cmake-build-debug/structure/TP_template/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/main2.cpp">
+			<Option target="TP_template_main2"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/shaders/3D.vs.glsl">
+			<Option target="TP_template_main2"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/shaders/normals.fs.glsl">
+			<Option target="TP_template_main2"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/shaders/triangle.fs.glsl">
+			<Option target="TP_template_main2"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/shaders/triangle.vs.glsl">
+			<Option target="TP_template_main2"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/Classe/Mur.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/Classe/OGL3.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/BBox.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Cone.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/FilePath.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Geometry.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Image.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Program.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/SDLWindowManager.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Shader.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/Sphere.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/common.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/include/glimac/glm.hpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Coordonnee.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Fantome.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Interface.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Item.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Mur.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Nourriture.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/OGL3.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/PacMan.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Personnage.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/Classe/Terrain.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Cone.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Geometry.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Image.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Program.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/SDLWindowManager.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Shader.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/Sphere.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/tiny_obj_loader.cpp">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/src/glimac/tiny_obj_loader.h">
+			<Option target="glimac"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\glimac\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/glimac/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\glimac\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\TP_template\"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/PacMan/structure/TP_template/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\structure\TP_template\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -14,21 +14,29 @@
 
 class Terrain;
 
+enum Etat{Normal,Peur,Super,Death};
+
 class Personnage : public Item{
     protected:
         float m_vitesse;
+        Etat etat;
+        glm::vec3 origin;
         Personnage(){}
         Personnage(Modele* modele,glm::vec3 pos):Item(modele,pos){
         	type=Character;
         	m_vitesse=0.1f;
+            etat=Normal;
+            origin=pos;
         }
         bool wallcollide(int orient,glm::vec3 move);
     public:
         float getVitesse();
+        Etat getetat();
+        void setetat(Etat state);
         void changedirection(int orient);
-
+        void gobacktostart();
         void deplacement(int orient);
-        virtual int collision(Item *item); //Valeur de retour à voir (void ou int)
+        //virtual int collision(Item *item); //Valeur de retour à voir (void ou int)
 
 };
 

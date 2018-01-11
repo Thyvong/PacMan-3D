@@ -89,6 +89,8 @@ Mur.hpp
 ../glimac/include/Classe/Mur.hpp
 Item.h
 ../glimac/include/Classe/Item.h
+Personnage.h
+../glimac/include/Classe/Personnage.h
 
 ../glimac/include/glimac/FilePath.hpp
 string
@@ -876,7 +878,7 @@ detail/type_vec4.hpp
 detail/func_vector_relational.hpp
 ../third-party/include/glm/detail/func_vector_relational.hpp
 
-/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/TP_template/main2.cpp
+/home/ken/Documents/C++/IMACMAN COMMUN/PROJET V3/TP_template/main2.cpp
 glimac/SDLWindowManager.hpp
 -
 glimac/glm.hpp

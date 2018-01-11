@@ -1,4 +1,4 @@
-# Install script for directory: /home/ken/Documents/C++/IMACMAN COMMUN/PROJET V2/glimac
+# Install script for directory: /home/ken/Documents/C++/IMACMAN COMMUN/PROJET V3/glimac
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

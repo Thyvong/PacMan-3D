@@ -36,16 +36,32 @@ int main(int argc, char** argv) {
      * HERE SHOULD COME THE INITIALIZATION CODE
      *********************************/
     glEnable(GL_DEPTH_TEST);
-    GLint MVPMat_loc=glGetUniformLocation(program.getGLId(),"uMVPMatrix");
-    GLint MVMat_loc=glGetUniformLocation(program.getGLId(),"uMVMatrix");
-    GLint NormalMat_loc=glGetUniformLocation(program.getGLId(),"uNormalMatrix");
+    //ici initialiser les locations uniformes
+    // Modele::init_uniformloc(&program);
+    
+    // GLint MVPMat_loc=glGetUniformLocation(program.getGLId(),"uMVPMatrix");
+    // GLint MVMat_loc=glGetUniformLocation(program.getGLId(),"uMVMatrix");
+    // GLint NormalMat_loc=glGetUniformLocation(program.getGLId(),"uNormalMatrix");
+    // std::cout<<"location:"<<std::endl
+    // <<"matrice mv: "<<MVMat_loc<<std::endl
+    // <<"matrice mvp: "<<MVPMat_loc<<std::endl
+    // <<"matrice normal: "<<NormalMat_loc<<std::endl;
+    Modele::setMVPloc(glGetUniformLocation(program.getGLId(),"uMVPMatrix"));
+    Modele::setMVloc(glGetUniformLocation(program.getGLId(),"uMVMatrix"));
+    Modele::setNormalloc(glGetUniformLocation(program.getGLId(),"uNormalMatrix"));
 
     Camera camera(20,50,0);// angle en degré
     std::string level="level1.txt";
     Terrain jeu(level);
+
     glm::mat4 view;
 
+
     PacMan* pacman=jeu.getPacman();
+    FantomeBleu* bleu=jeu.getFb();
+    FantomeRouge* rouge=jeu.getFrg();
+    FantomeRose* rose=jeu.getFrs();
+    FantomeJaune* jaune=jeu.getFj();
     
 
     std::vector<Mur*> maze=jeu.getMaze();
@@ -64,16 +80,27 @@ int main(int argc, char** argv) {
     std::cout<<"coord: "<<pacman->getCoordonnee()<<std::endl;
     std::cout<<"tes fini"<<std::endl;
 
-    while(!done) {
+    // pour garder la touche enfoncée
+    SDL_EnableKeyRepeat(1, 8);
+    SDL_EnableUNICODE(1);
+
+    while(!done&&!jeu.gameover()) {
         // Event loop:
         SDL_Event e;
+        bleu->deplacement();
+        rouge->deplacement();
+        rose->deplacement();
+        jaune->deplacement();
         while(windowManager.pollEvent(e)) {
+
             switch(e.type){
                 case SDL_QUIT:{
                     done = true; // Leave the loop after this iteration
                 }break;
 
                 case SDL_KEYDOWN:{
+                    if(e.key.keysym.unicode > 0 || e.key.keysym.unicode < 256)
+                        e.key.keysym.sym = (SDLKey) e.key.keysym.unicode;
                     switch(e.key.keysym.sym){
                         case SDLK_ESCAPE:{
                             done=true;
@@ -83,6 +110,7 @@ int main(int argc, char** argv) {
                         }break;
 
                         case SDLK_z:{//direction z négatif
+                            std::cout << "z\n";
                             pacman->deplacement(2);
                             //pacman.deplacement();
                         }break;
@@ -93,6 +121,7 @@ int main(int argc, char** argv) {
 
                         case SDLK_q:{
                             pacman->deplacement(1);
+                            std::cout << "q\n";
                         }break;
 
                         case SDLK_s:{
@@ -131,54 +160,71 @@ int main(int argc, char** argv) {
 
 
         pacman->update();
+        jeu.LookAfterPacman();
         view=camera.gettrackviewmat(*pacman);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        jeu.dessin(view);
 
 
-        glBindVertexArray(pacman->getApparence()->vao);
-        //ca marche aussi
-        glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*pacman->getMod()));
-        glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*pacman->getMod()))));
-        glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(pacman->getProjection()*view*pacman->getMod()));
-        if(pacman->getApparence()->type==Boule){
-            glDrawArrays(GL_TRIANGLES, 0, pacman->getApparence()->nbpoint);
-        }
-        glBindVertexArray(0);
+        // //DESSIN DE PACMAN
+        // glBindVertexArray(pacman->getApparence()->vao);
+        // //ca marche aussi
+        // glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*pacman->getMod()));
+        // glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*pacman->getMod()))));
+        // glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(pacman->getProjection()*view*pacman->getMod()));
+        // if(pacman->getApparence()->type==Boule){
+        //     glDrawArrays(GL_TRIANGLES, 0, pacman->getApparence()->nbpoint);
+        // }
+        // glBindVertexArray(0);
+
+
+        // //DESSIN DE FAntome
+        // glBindVertexArray(bleu->getApparence()->vao);
+        // //ca marche aussi
+        // glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*bleu->getMod()));
+        // glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*bleu->getMod()))));
+        // glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(bleu->getProjection()*view*bleu->getMod()));
+        // if(bleu->getApparence()->type==Boule){
+        //     glDrawArrays(GL_TRIANGLES, 0, bleu->getApparence()->nbpoint);
+        // }
+        // glBindVertexArray(0);
 
 
 
-        //DESSIN DE MAZE
-        for (int i = 0; i < maze.size(); ++i)
-        {
-            glBindVertexArray(maze[i]->getApparence()->vao);
-            //TEST
-            glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*maze[i]->getMod()));
-            glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*maze[i]->getMod()))));
-            glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(maze[i]->getProjection()*view*maze[i]->getMod()));
-            if (maze[i]->getApparence()->type==Boite){
+        // //DESSIN DE MAZE
+        // for (int i = 0; i < maze.size(); ++i)
+        // {
+        //     glBindVertexArray(maze[i]->getApparence()->vao);
+        //     //TEST
+        //     glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*maze[i]->getMod()));
+        //     glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*maze[i]->getMod()))));
+        //     glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(maze[i]->getProjection()*view*maze[i]->getMod()));
+        //     if (maze[i]->getApparence()->type==Boite){
     
-                glDrawElements(GL_TRIANGLES,maze[i]->getApparence()->nbpoint,GL_UNSIGNED_INT,0);
-            }
-            glBindVertexArray(0);
-        }//endfor
+        //         glDrawElements(GL_TRIANGLES,maze[i]->getApparence()->nbpoint,GL_UNSIGNED_INT,0);
+        //     }
+        //     glBindVertexArray(0);
+        // }//endfor
         
 
 
-        //DESSIN DE BOUFFE
-        for (int i = 0; i < bouffe.size(); ++i)
-        {
-            glBindVertexArray(bouffe[i]->getApparence()->vao);
-            //TEST
-            glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*bouffe[i]->getMod()));
-            glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*bouffe[i]->getMod()))));
-            glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(bouffe[i]->getProjection()*view*bouffe[i]->getMod()));
-            if (bouffe[i]->getApparence()->type==PetiteBoule){
-    
-                glDrawArrays(GL_TRIANGLES,0,bouffe[i]->getApparence()->nbpoint);
-            }
-            glBindVertexArray(0);
-        }//endfor
+        // //DESSIN DE BOUFFE
+        // for (int i = 0; i < bouffe.size(); ++i)
+        // {
+        //     if(bouffe[i]->isActive()){
+        //         glBindVertexArray(bouffe[i]->getApparence()->vao);
+        //         //TEST
+        //         glUniformMatrix4fv(MVMat_loc,1,GL_FALSE,glm::value_ptr(view*bouffe[i]->getMod()));
+        //         glUniformMatrix4fv(NormalMat_loc,1,GL_FALSE,glm::value_ptr(glm::transpose(glm::inverse(view*bouffe[i]->getMod()))));
+        //         glUniformMatrix4fv(MVPMat_loc,1,GL_FALSE,glm::value_ptr(bouffe[i]->getProjection()*view*bouffe[i]->getMod()));
+        //         if (bouffe[i]->getApparence()->type==PetiteBoule){
+        
+        //             glDrawArrays(GL_TRIANGLES,0,bouffe[i]->getApparence()->nbpoint);
+        //         }
+        //         glBindVertexArray(0);
+        //     }
+        // }//endfor
         
 
 

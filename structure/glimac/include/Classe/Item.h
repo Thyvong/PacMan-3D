@@ -16,8 +16,7 @@ class Item{
     protected:
         
         int orientation;//de 0 à 4, représente la direction de l'objet clockwise (0=face,1= profil gauche, 2=arrière,3=profil droit)
-        float hauteur,largeur;//DIMENSION du cube circonscrit, pour les collisions
-
+        
         Type type;// décrit sa fonction
         Modele* apparence;// information sur l'apparence de l'objet (par rapport à opengl)
         
@@ -27,10 +26,14 @@ class Item{
         
         void calculModeleMatrix();
 
+
     public:
         Item(){}
         Item(Modele* modele,glm::vec3 pos);
         virtual ~Item(){}
+
+        float hauteur,largeur;//DIMENSION du cube circonscrit, pour les collisions
+
 
         void setCoordonnee(glm::vec3 coord);
 
@@ -40,9 +43,13 @@ class Item{
         glm::mat4 getProjection();
         glm::mat4 getMod();
 
+        virtual int collide(Item* item){
+
+        }
+
         void update();
         int wFile(); //écrit dans un fichier
-        virtual int dessin(); //dessine sur la fenetre
+        virtual int dessin(glm::mat4 view); //dessine sur la fenetre
 };
 
 

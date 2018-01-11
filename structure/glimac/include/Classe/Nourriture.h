@@ -22,6 +22,17 @@ class Nourriture : public Item{
 
     public:
         virtual int Bonus() = 0;
+        int collide(){
+            if (isActive())
+            {  
+                std::cout<<"MIAM"<<std::endl;
+                active=false;
+                return Bonus();
+            }
+            return 0;
+        }
+        bool isActive();
+        int dessin(glm::mat4 view);
 };
 class Gomme : public Nourriture{
 
@@ -32,11 +43,10 @@ class Gomme : public Nourriture{
         }
 
         int Bonus(){
-        	active=false;
         	return 100;
         }
         //int wFile(); //écrit dans un fichier
-        int dessin(); //dessine sur la fenetre
+
 };
 class SuperGomme : public Nourriture {
 
@@ -46,10 +56,9 @@ class SuperGomme : public Nourriture {
         	type=SGUM;
         }
         int Bonus(){
-        	active=false;
         	return 1000;
         }
-        int dessin();
+
 };
 class Fruit : public Nourriture{
 
@@ -59,11 +68,10 @@ class Fruit : public Nourriture{
         	type=FRUIT;
         }
         int Bonus(){
-        	active=false;
         	return 500;
         }
         //int wFile(); //écrit dans un fichier
-        int dessin(); //dessine sur la fenetre
+
 };
 
 #endif //IMACMAN_NOURRITURE_H

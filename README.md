@@ -1,2 +1,2 @@
 # PacMan-3D
-A PacMan gae
+A PacMan game

@@ -3,6 +3,34 @@
 
 using namespace glimac;
 
+GLint Modele::m_mvloc,Modele::m_mvploc,Modele::m_normalloc;
+
+GLint Modele::getMVloc(){
+
+	return m_mvloc;
+}
+GLint Modele::getMVPloc(){
+
+	return m_mvploc;
+}
+GLint Modele::getNormalloc(){
+
+	return m_normalloc;
+}
+void Modele::setMVloc(GLint val){
+	m_mvloc=val;
+}
+void Modele::setMVPloc(GLint val){
+	m_mvploc=val;
+}
+void Modele::setNormalloc(GLint val){
+	m_normalloc=val;
+}
+void Modele::init_uniformloc(Program* program){
+	setMVPloc(glGetUniformLocation(program->getGLId(),"uMVPMatrix"));
+	setMVloc(glGetUniformLocation(program->getGLId(),"uMVMatrix"));
+	setNormalloc(glGetUniformLocation(program->getGLId(),"uNormalMatrix"));
+}
 
 
 Modele::Modele(Form typedemodele):type(typedemodele){

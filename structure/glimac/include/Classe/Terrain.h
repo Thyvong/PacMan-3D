@@ -14,7 +14,7 @@
 #include "Nourriture.h"
 #include "Mur.hpp"
 #include "Item.h"
-
+#include "Personnage.h"
 
 
 void tilemapPosition(glm::vec3 pos,int rows,int cols,int& indice1,int& indice2);
@@ -52,19 +52,31 @@ class Terrain{
         // faut il updater la tilemap pour les movements ???
         // --> NE DOIT CONTENIR QUE les infos sur nourriture et murs
         static std::vector<std::vector<Item*>> m_tilemap;// public?
+        static int supermodecpt;// decompte
 
         PacMan* getPacman();
         FantomeBleu* getFb();
         FantomeJaune* getFj();
         FantomeRose* getFrs();
-        FantomeRouge* getfrg();
-        //Mur& getMur();
+        FantomeRouge* getFrg();
+        
+        // on l'utilisera surtout pour pacman, il lui renverra tous les scores
+        void collision(PacMan* perso,Nourriture* food);
+        void collision(PacMan* perso1,Fantome* perso2);
+        void LookAfterPacman();
+        void startSuper();
+        bool isSuper();
+        void Supercountdown();
 
         //renvoie une copie
         std::vector<Nourriture*> getNourriture();
         std::vector<Mur*> getMaze();
 
         void load(std::string nom);
+        int dessin(glm::mat4 view);
+        void afterPacDeath();
+        int gameover();
+
 
 };
 

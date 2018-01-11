@@ -1,0 +1,1 @@
+../glimac/libglimac.a -lmingw32 -mwindows C:/MinGW/lib/SDLmain.lib C:/MinGW/lib/SDL.lib -lglu32 -lopengl32 C:/MinGW/lib/glew32.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

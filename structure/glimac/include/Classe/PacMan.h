@@ -16,18 +16,21 @@ class PacMan : public Personnage{
         PacMan(){}
         PacMan(Modele* modele,glm::vec3 pos):Personnage(modele,pos){
             type=IMACMAN;
+            life=3;
         }
-        int mange(Nourriture * nourriture );//valeur retour a voir
-        int bonus(Nourriture * nourriture);//valeur retour a voir
+        int life;
+        void decreaselife();
+        void increaselife();
         //int wFile(); //écrit dans un fichier
-        int dessin(); //dessine sur la fenetre
-        //void deplacement(glm::vec3 coordonnee);
-        int collision(Item * item); //Valeur de retour à voir (void ou int)
 
-        int croisement(Gomme * gomme);
-        int croisement(SuperGomme * supergomme);
-        int croisement(Fantome * fantome);
-        int croisement(Fruit * fruit);
+
+        //void deplacement(int orient);
+        int mange(Nourriture * nourriture );//valeur retour a voir
+
+        int collide(Nourriture* nourriture); // applique des effets
+        int collide(Fantome* ghost);
+
+        
 
 };
 #endif //IMACMAN_PAC_MAN_H
